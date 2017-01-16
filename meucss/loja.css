@@ -1,0 +1,214 @@
+body {
+    padding-top: 50px;
+    padding: 0px;
+}
+#mensageria{
+  position: absolute;
+  right: 600px;
+  bottom:555px;
+}
+#msgLogin{
+  position: relative;
+  top:80px;
+}
+.principal {
+    text-align: center;
+}
+
+#tabela{
+position: relative;
+top: 120px;
+text-align: center;
+border: 2px solid black;
+font-family: 'Creepster', cursive;
+}
+.linhaTabela{
+border: 2px solid black;
+}
+
+th{
+text-align: center;
+background-color: black;
+color:#9D9D9D;
+}
+
+.formularioInteiro{
+position: relative;
+top: 20px;
+padding-top: 30px;
+padding-bottom: 10px;
+margin-right: -60px;
+margin-top: 20px;
+background-color: black;
+color:#9D9D9D;
+}
+
+#formularioCadastro{
+    position:relative;
+    top:15px;
+    height: 300px;
+padding-right: 80px;
+background-color: black;
+}
+
+.login{
+    position: relative;
+    top:150px;
+    width: 350px;
+    left: 320px;
+}
+#mensagem-login{
+  position: relative;
+  top: 100px;
+right: 80px;
+}
+.alert-danger{
+  position: relative;
+  background-color: none;
+  top: 100px;
+right: 80px;
+}
+.alert-success{
+  position: relative;
+  background-color: none;
+  top: 100px;
+right: 80px;
+}
+#btnLogin{
+    position:relative;
+    background-color: #9D9D9D;
+    border: none;
+    color: #161616;
+    width: 100px;
+
+}
+#loginFormulario{
+position: relative;
+background-color: black;
+color:#9D9D9D;
+left: 55px;
+bottom: 75px;
+border-radius: 0px 0px 15px 15px;
+border: none;
+}
+
+#clienteFormulario{
+  position:relative;
+  top:70px;
+  background-color: black;
+  color:#9D9D9D;
+  width: 670px;
+  height: 450px;
+}
+#imputEscondido{
+    position: relative;
+    left:3000px;
+}
+
+#formModal{
+  position:relative;
+  width: 700px;
+  left:200px;
+}
+
+#rg{
+  width: 180px;
+}
+#cpf{
+  width: 180px;
+  position: relative;
+  left: 275px;
+}
+#label-cpf{
+position: relative;
+left: 290px;
+top: 5px;
+}
+#labelCategoriaCliente{
+  position: relative;
+  bottom: 135px;
+  left: 170px;
+}
+#selectCliente{
+position: relative;
+left: 275px;
+bottom: 163px;
+width: 180px;
+}
+#observacao{
+  position: relative;
+  bottom: 130px;
+}
+#labelobservacao{
+  position: relative;
+bottom: 100px;
+right: 235px;
+}
+#contato{
+  position: relative;
+  width: 180px;
+bottom: 50px;
+}
+#label-contato{
+  position: relative;
+  bottom: 40px;
+}
+#label-nascimento{
+  position: relative;
+    bottom: 130px;
+}
+#nascimento{
+  position: relative;
+  width: 180px;
+  bottom: 130px;
+}
+
+#btnCadastroCliente{
+  position:relative;
+  width: 150px;
+  left: 200px;
+  bottom: 180px;
+  background-color: #9d9d9d;
+  color: #161616;
+  border: none;
+}
+.urso-login{
+  position: relative;
+  width: 800px;
+  height: 350px;
+  top: 150px;
+  right: 50px;
+  display: none;
+}
+.ursoPrincipal{
+  position: relative;
+  width: 350px;
+  height: 250px;
+  top: 80px;
+  right: 20px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.form-group{
+  font-family: 'Creepster', cursive;
+}
+.navbar{
+  width: 100%;
+  font-family: 'Creepster', cursive;
+    background-color: black;
+}
+#urso-nav{
+  position: absolute;
+  bottom: 4px;
+  height: 50px;
+  right: 1300px;
+}
+
+#mensagem{
+  position: relative;
+  top: 100px;
+}
+#mensagemSucesso{
+  position: relative;
+  top: 100px;
+}
