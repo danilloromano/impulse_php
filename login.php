@@ -1,8 +1,8 @@
-<?php 
+<?php
 require_once ("banco-usuario.php");
 require_once("logica-usuario.php");
 
-$usuario = buscaUsuario($conexao, $_POST["email"], $_POST["senha"]);
+$usuario = buscaUsers($conexao, $_POST["email"], $_POST["password"]);
 if($usuario == null) {
     $_SESSION["danger"]= "Usuario ou senha invalida";
     header("Location: index.php");

@@ -12,11 +12,16 @@ $produtos = listaProdutos($conexao);
 mostraAlerta("success");
 mostraAlerta("danger");
 ?>
+
 <h1 id=h1formProdutos>Lista de Produtos</h1>
-<table class="table  table-responsive"id="tabela">
-  <tr>
+<!-- <div class="dataTables_filter">
+  <label id="label-filter">Search:<input type="search" id="filter"></label>
+</div> -->
+
+<table class="table  table-responsive display" id="tabela">
+  <thead>
         <th>Data</th>
-        <th>Nome</th>
+         <th>Nome</th>
         <th>Marca</th>
         <th>Custo</th>
         <th>Venda</th>
@@ -27,13 +32,11 @@ mostraAlerta("danger");
         <th>Categoria</th>
         <th>Alterar</th>
         <th>Remover</th>
-    </tr>
+    </thead>
+    <tbody class="linhaTabela">
 
-<?php
-foreach($produtos as $produto) :
-?>
-
-    <tr class="linhaTabela">
+    <?php foreach($produtos as $produto) : ?>
+      <tr>
         <td><?= $produto['data'] ?></td>
         <td><?= $produto['nome'] ?></td>
         <td><?= $produto['marca'] ?></td>
@@ -53,9 +56,8 @@ foreach($produtos as $produto) :
                 <button class="btn btn-danger">Remover</button>
             </form>
         </td>
-    </tr>
-<?php
-endforeach
-?>
+      </tr>
+    <?php endforeach ?>
+  </tbody>
 </table>
 <?php include("rodape.php");?>

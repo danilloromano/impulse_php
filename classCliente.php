@@ -1,18 +1,17 @@
 <?php
-    class Cliente {
+    class User {
 
         public $id;
-        public $nome;
+        public $name;
         public $email;
-        public $endereco;
         public $rg;
         public $cpf;
-        public $contato;
-        public $nascimento;
-        public $observacao;
-        public $categoriaCliente_id;
+        public $phone;
+        public $birth;
+        public $addess;
+        public $user_role;
 
     }
-        $cliente = new Cliente();
+        $user = new User();
 
 ?>

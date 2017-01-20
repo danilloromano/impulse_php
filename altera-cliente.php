@@ -7,10 +7,10 @@ $cliente->email = $_POST["email"];
 $cliente->endereco = $_POST["endereco"];
 $cliente->rg = $_POST["rg"];
 $cliente->cpf = $_POST["cpf"];
-$cliente->contato = $_POST["contato"];
-$cliente->nascimento = $_POST["nascimento"];
+$cliente->phone = $_POST["phone"];
+$cliente->birth = $_POST["birth"];
 $cliente->observacao = $_POST["observacao"];
-$cliente->categoriaCliente_id = $_POST['categoriaCliente_id'];
+$cliente->user_role = $_POST['user_role'];
 
 
 

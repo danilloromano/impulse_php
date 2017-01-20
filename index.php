@@ -1,4 +1,4 @@
-<script type="text/javascript" src"js/index.js"></script>
+
 
 
 <?php require_once('cabecalho.php');
@@ -33,8 +33,8 @@ if(usuarioEstaLogado()) {
                        <input type="email" class="form-control" name="email" required="" placeholder="insira seu email">
                     </div>
                         <div class="form-group">
-                            <label for="senha" class="control-label">Senha</label>
-                            <input type="password" class="form-control" name="senha" placeholder="insira sua senha" required="">
+                            <label for="password" class="control-label">Password</label>
+                            <input type="password" class="form-control" name="password" placeholder="insira sua senha" required="">
                         </div>
                      <div class="form-group">
                           <button type="submit" class="btn btn-primary" id="btnLogin">Login</button>                        </div>

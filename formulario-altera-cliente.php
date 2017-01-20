@@ -51,18 +51,18 @@ $categoriasClientes = listaCategoriasCliente($conexao);
   </div>
 
   <div class="form-group">
-    <label id="label-contato"class="control-label col-sm-2" for="contato">Contato:</label>
+    <label id="label-phone"class="control-label col-sm-2" for="phone">phone:</label>
     <div class="col-sm-10">
-      <input type="text" value="<?=$cliente['contato']?>" class="form-control" id="contato" name="contato" placeholder="contato">
+      <input type="text" value="<?=$cliente['phone']?>" class="form-control" id="phone" name="phone" placeholder="phone">
     </div>
   </div>
 
   <div class="form-group">
   <div class=" col-sm-offset-2 col-sm-3">
   <label for="select" id="labelCategoriaCliente"> Categoria :</label>
-  <select class="form-control" name="categoriaCliente_id" id="selectCliente">
+  <select class="form-control" name="user_role" id="selectCliente">
   <?php foreach($categoriasClientes as $categoriaCliente) :
-    $essaEhACategoria = $cliente['categoriaCliente_id'] == $categoriaCliente['id'];
+    $essaEhACategoria = $cliente['user_role'] == $categoriaCliente['id'];
     $selecao = $essaEhACategoria ? "selected='selected'" : "";
   ?>
   <option value="<?=$categoriaCliente['id']?>" <?=$selecao?>>
@@ -81,9 +81,9 @@ $categoriasClientes = listaCategoriasCliente($conexao);
   </div>
 
     <div class="form-group">
-      <label id="label-nascimento"class="control-label col-sm-2" for="nascimento">Nascimento:</label>
+      <label id="label-birth"class="control-label col-sm-2" for="birth">birth:</label>
       <div class="col-sm-10">
-        <input type="text" value="<?=$cliente['nascimento']?>" class="form-control" id="nascimento" name="nascimento" placeholder="quantidade">
+        <input type="text" value="<?=$cliente['birth']?>" class="form-control" id="birth" name="birth" placeholder="quantidade">
       </div>
     </div>
 
@@ -100,7 +100,7 @@ $categoriasClientes = listaCategoriasCliente($conexao);
 
 <?php include("rodape.php");?>
 <script>
-$("#contato").mask("(99) 99999-9999");
+$("#phone").mask("(99) 99999-9999");
 $("#rg").mask("99.999.999-*");
 $("#cpf").mask("999.999.999-99");
 $("#quantidade").mask("99/99/9999");

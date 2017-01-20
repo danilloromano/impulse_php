@@ -9,7 +9,7 @@ body {
 }
 #msgLogin{
   position: relative;
-  top:80px;
+  bottom: 10px;
 }
 .principal {
     text-align: center;
@@ -17,7 +17,7 @@ body {
 
 #tabela{
 position: relative;
-top: 120px;
+
 text-align: center;
 border: 2px solid black;
 font-family: 'Creepster', cursive;
@@ -41,14 +41,6 @@ margin-right: -60px;
 margin-top: 20px;
 background-color: black;
 color:#9D9D9D;
-}
-
-#formularioCadastro{
-    position:relative;
-    top:15px;
-    height: 300px;
-padding-right: 80px;
-background-color: black;
 }
 
 .login{
@@ -87,14 +79,14 @@ position: relative;
 background-color: black;
 color:#9D9D9D;
 left: 55px;
-bottom: 75px;
+bottom: 170px;
 border-radius: 0px 0px 15px 15px;
 border: none;
 }
 
 #clienteFormulario{
   position:relative;
-  top:70px;
+
   background-color: black;
   color:#9D9D9D;
   width: 670px;
@@ -105,78 +97,11 @@ border: none;
     left:3000px;
 }
 
-#formModal{
-  position:relative;
-  width: 700px;
-  left:200px;
-}
-
-#rg{
-  width: 180px;
-}
-#cpf{
-  width: 180px;
-  position: relative;
-  left: 275px;
-}
-#label-cpf{
-position: relative;
-left: 290px;
-top: 5px;
-}
-#labelCategoriaCliente{
-  position: relative;
-  bottom: 135px;
-  left: 170px;
-}
-#selectCliente{
-position: relative;
-left: 275px;
-bottom: 163px;
-width: 180px;
-}
-#observacao{
-  position: relative;
-  bottom: 130px;
-}
-#labelobservacao{
-  position: relative;
-bottom: 100px;
-right: 235px;
-}
-#contato{
-  position: relative;
-  width: 180px;
-bottom: 50px;
-}
-#label-contato{
-  position: relative;
-  bottom: 40px;
-}
-#label-nascimento{
-  position: relative;
-    bottom: 130px;
-}
-#nascimento{
-  position: relative;
-  width: 180px;
-  bottom: 130px;
-}
-
-#btnCadastroCliente{
-  position:relative;
-  width: 150px;
-  left: 200px;
-  bottom: 180px;
-  background-color: #9d9d9d;
-  color: #161616;
-  border: none;
-}
 .urso-login{
   position: relative;
   width: 800px;
   height: 350px;
-  top: 150px;
+  top: 50px;
   right: 50px;
   display: none;
 }
@@ -184,7 +109,7 @@ bottom: 50px;
   position: relative;
   width: 350px;
   height: 250px;
-  top: 80px;
+  bottom: 20px;
   right: 20px;
   border-radius: 15px 15px 0px 0px;
 }
@@ -197,12 +122,6 @@ bottom: 50px;
   font-family: 'Creepster', cursive;
     background-color: black;
 }
-#urso-nav{
-  position: absolute;
-  bottom: 4px;
-  height: 50px;
-  right: 1300px;
-}
 
 #mensagem{
   position: relative;
@@ -211,4 +130,35 @@ bottom: 50px;
 #mensagemSucesso{
   position: relative;
   top: 100px;
+}
+
+.new_form {
+  background-color: black;
+  width: 500px;
+  max-height: 420px;
+  overflow: scroll;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.new_form-group.--flex {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.new_form-group_row.--half{
+  width: 48%;
+}
+
+.new_form-group_row {
+  margin-bottom: 10px;
+}
+
+.new_form-label{
+  color: white;
+  font-family: 'Creepster', cursive;
+  margin-bottom: 4px;
 }

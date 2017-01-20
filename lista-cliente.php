@@ -1,4 +1,4 @@
-<script type="text/javascript" src"js/index.js"></script>
+
 <?php require_once("cabecalho.php");
       require_once("banco-cliente.php");
       require_once("logica-usuario.php");
@@ -7,7 +7,7 @@
 verificaUsuario();
 ?>
 <?php
-$clientes = listaClientes($conexao);
+$users = listaUsers($conexao);
 ?>
 <?php
 mostraAlerta("success");
@@ -15,40 +15,40 @@ mostraAlerta("danger");
 ?>
 <h1 id=h1formProdutos>Lista de Clientes</h1>
 <table class="table  table-responsive"id="tabela">
-  <tr>
+  <thead>
+    <tr>
         <th>Nome</th>
-        <th>Endereco</th>
         <th>Email</th>
         <th>RG</th>
         <th>CPF</th>
-        <th>Contato</th>
-        <th>Nascimento</th>
-        <th>Observacao</th>
-        <th>Categoria</th>
+        <th>phone</th>
+        <th>birth</th>
+        <th>Regra</th>
         <th>Alterar</th>
         <th>Remover</th>
     </tr>
+</thead>
+
+<tbody class="linhaTabela">
 
 <?php
-foreach($clientes as $cliente) :
+foreach($users as $user) :
 ?>
 
-    <tr class="linhaTabela">
-        <td><?= $cliente['nome'] ?></td>
-        <td><?= $cliente['endereco'] ?></td>
-        <td><?= $cliente['email'] ?></td>
-        <td><?= $cliente['rg'] ?></td>
-        <td><?= $cliente['cpf'] ?></td>
-        <td><?= $cliente['contato'] ?></td>
-        <td><?= $cliente['nascimento'] ?></td>
-        <td><?= substr($cliente['observacao'],0,20) ?></td>
-        <td><?= $cliente['categoriasCliente_nome'] ?></td>
+    <tr>
+        <td><?= $user['name'] ?></td>
+        <td><?= $user['email'] ?></td>
+        <td><?= $user['rg'] ?></td>
+        <td><?= $user['cpf'] ?></td>
+        <td><?= $user['phone'] ?></td>
+        <td><?= $user['birth'] ?></td>
+        <td><?= $user['roles'] ?></td>
 
-        <td><a  class="btn btn-primary"href="formulario-altera-cliente.php?id=<?=$cliente['id']?>">Alterar</a>
+        <td><a  class="btn btn-primary"href="formulario-altera-cliente.php?id=<?=$user['id']?>">Alterar</a>
 
         <td>
             <form action="remove-cliente.php" method="post">
-                <input class="input"type="hidden" name="id" value="<?=$cliente['id']?>">
+                <input class="input"type="hidden" name="id" value="<?=$user['id']?>">
                 <button class="btn btn-danger" id="btnRemover">Remover</button>
             </form>
         </td>
@@ -56,6 +56,7 @@ foreach($clientes as $cliente) :
 <?php
 endforeach
 ?>
+  </tbody>
 </table>
 
 <?php require_once("rodape.php");?>
