@@ -16,7 +16,7 @@ include("mostra-alerta.php");
     <link href="meucss/resetCss.css" rel="stylesheet" />
     <link href="meucss/rodape.css" rel="stylesheet" />
     <link href="meucss/jquery.dataTables.css" rel="stylesheet" />
-      <script type="text/javascript "src="DataTables/media/js/jquery.js"></script>
+      <script type="text/javascript "src="js/jquery.js"></script>
       <script src="js/jquery.dataTables.js" type="text/javascript"></script>
       <script type="text/javascript "src="js/maskedimput.min.js"></script>
 
